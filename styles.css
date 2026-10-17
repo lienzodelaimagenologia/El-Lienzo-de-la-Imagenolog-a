@@ -1,0 +1,116 @@
+:root {
+  --text: #111;
+  --muted: #555;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--text);
+  font-family: "Syne", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Banner negro de arriba, a todo el ancho */
+.banner { background: #000; }
+.banner img {
+  display: block;
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  margin: 0 auto;
+  min-height: 200px; /* espacio reservado si la imagen aún no está */
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 80px;
+}
+
+section { margin-bottom: 48px; }
+
+h1, h2 { font-weight: 500; line-height: 1.3; margin: 0; }
+
+.lead { font-size: 1.2rem; margin-bottom: 32px; }
+
+/* Imagen con texto al lado */
+.story {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 32px;
+  align-items: start;
+  margin-bottom: 40px;
+}
+.story p { margin: 0; font-size: 0.95rem; }
+
+/* Imágenes con su pie de foto */
+.framed { margin: 0; }
+.framed img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  background: #eee; /* espacio visible mientras no esté la imagen */
+}
+.framed figcaption {
+  margin-top: 10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-align: center;
+}
+.framed-center {
+  max-width: 340px;
+  margin: 0 auto 48px;
+}
+
+.invite { margin: 0; font-size: 0.95rem; }
+
+/* Etiqueta negra "Agenda de Actividades" */
+.label {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 8px 16px;
+  margin-bottom: 20px;
+}
+
+.agenda { list-style: none; margin: 0; padding: 0; }
+.agenda li {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 8px 0;
+  font-size: 0.9rem;
+}
+.agenda time { white-space: nowrap; }
+
+/* Registro */
+.register h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 4px; }
+.register p { margin: 0 0 32px; font-size: 0.95rem; }
+
+.button {
+  display: block;
+  max-width: 380px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+}
+.button:hover { background: #333; }
+.button:focus-visible { outline: 3px solid #0a66ff; outline-offset: 3px; }
+
+/* Celular */
+@media (max-width: 600px) {
+  .story { grid-template-columns: 1fr; }
+  .framed-center { max-width: 100%; }
+  .agenda li { flex-direction: column; gap: 0; }
+}
