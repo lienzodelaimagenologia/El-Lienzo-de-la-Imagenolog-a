@@ -75,7 +75,7 @@ figcaption {
   max-width: 380px;
   margin: 0 auto;
   padding: 14px 24px;
-  background: #000;
+  background: #b89f69;
   color: #fff;
   text-align: center;
   text-decoration: none;
@@ -100,7 +100,7 @@ figcaption {
 }
 .logos img { height: 70px; width: auto; }
 
-/* Celular: todo en una columna, imagen arriba y texto abajo */
+/* Celular: todo en una columna, imagen abajo y texto arriba */
 @media (max-width: 640px) {
   .block, .block.reverse { grid-template-columns: 1fr; gap: 16px; }
   .block.reverse figure { order: 0; }
