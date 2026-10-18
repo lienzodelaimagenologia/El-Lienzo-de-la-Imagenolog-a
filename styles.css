@@ -106,3 +106,9 @@ figcaption {
   .block.reverse figure { order: 0; }
   .agenda li { flex-direction: column; gap: 0; }
 }
+
+.block p,
+.invite {
+  text-align: justify;
+  hyphens: auto;
+}
