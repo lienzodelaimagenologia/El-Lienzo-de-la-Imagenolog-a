@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="El Lienzo de la Imagenología, 12 de noviembre de 2026.">
+  <title>El Lienzo de la Imagenología</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- FUENTE: si ya cambiaste la fuente, pegá aquí tu enlace de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="banner">
+    <img src="images/banner.jpg" alt="El Lienzo de la imagenología, 12/11/26">
+  </header>
+
+  <main>
+
+    <section>
+      <h1 class="lead">Toda imagen cuenta una historia. La nuestra comenzó hace más de un siglo...</h1>
+
+      <!-- BLOQUE 1: imagen a la IZQUIERDA -->
+      <div class="block">
+        <figure>
+          <img src="images/imagen1.jpg" alt="Mano de Bertha Röntgen">
+          <figcaption>Mano de Bertha Röntgen, 1895</figcaption>
+        </figure>
+        <p>El 8 de noviembre de 1895, el físico alemán Wilhelm Conrad Röntgen descubrió los rayos X mientras experimentaba con tubos de descarga eléctrica. Poco después, obtuvo una de las imágenes más emblemáticas de la historia: la mano de su esposa, Bertha Röntgen, en la que se distinguían los huesos y su anillo. Por primera vez, fue posible observar el interior del cuerpo humano sin abrirlo. Aquel descubrimiento marcaría el inicio de una nueva era para la medicina en el mundo.</p>
+      </div>
+
+      <!-- BLOQUE 2: imagen a la DERECHA (lleva la clase "reverse") -->
+      <div class="block reverse">
+        <figure>
+          <img src="images/imagen3.jpg" alt="Primer TAC">
+          <figcaption>Primer TAC para diagnóstico de tumor cerebral, 1971</figcaption>
+        </figure>
+        <p>Pocos años después, los avances en el conocimiento de la radiactividad abrieron el camino para utilizar la radiación en el tratamiento de enfermedades. Desde entonces, la ciencia continuó buscando nuevas formas de explorar el cuerpo humano. La tomografía computarizada transformó las proyecciones radiográficas en imágenes de cortes anatómicos y volúmenes.</p>
+      </div>
+
+      <!-- BLOQUE 3: izquierda -->
+      <div class="block">
+        <figure>
+          <img src="images/imagen2.jpg" alt="Primera resonancia magnética">
+          <figcaption>Primera MRI de tórax en búsqueda de visualizar el corazón, 1977</figcaption>
+        </figure>
+        <p>La resonancia magnética, por su parte, permitió estudiar los tejidos mediante campos magnéticos, sin utilizar radiación ionizante. Con el tiempo, sus avances hicieron posible observar con mayor detalle las estructuras anatómicas y explorar aspectos del funcionamiento cerebral, abriendo nuevas posibilidades para la investigación. El ultrasonido, a su vez, hizo posible observar estructuras en tiempo real a través de ondas sonoras.</p>
+      </div>
+
+      <!-- BLOQUE 4: derecha -->
+      <div class="block reverse">
+        <figure>
+          <img src="images/imagen4.jpg" alt="Medicina nuclear">
+          <figcaption>Adquisición de hígado con Sulfuro Coloidal-99mTc, 1962</figcaption>
+        </figure>
+        <p>Paralelamente, la medicina nuclear abrió una nueva ventana al interior del organismo, permitiendo estudiar la fisiología del organismo. Con el desarrollo de nuevas tecnologías, esta disciplina evolucionó hasta incorporar técnicas como la tomografía por emisión de positrones, lo que amplió las posibilidades del diagnóstico y la investigación médica.</p>
+      </div>
+
+      <!-- BLOQUE 5: izquierda -->
+      <div class="block">
+        <figure>
+          <img src="images/imagen5.jpg" alt="Tractografía">
+          <figcaption>Tractografía</figcaption>
+        </figure>
+        <div>
+          <p>Esta historia también se escribió en Costa Rica. En 2006 se creó nuestra carrera, destinada a formar profesionales capaces de comprender lo que ocurre detrás de cada imagen, con un espíritu altruista y un compromiso constante con el bienestar de las personas que atendemos. Lo que comenzó con los primeros equipos de rayos X se convirtió en un campo interdisciplinario en constante transformación que hoy llevamos con nosotros.</p>
+          <p>Cada imagen de esta historia representa mucho más que un avance tecnológico: representa la curiosidad de quienes se atrevieron a mirar más allá de lo visible. Hoy, la historia continúa y el lienzo está en nuestras manos.</p>
+        </div>
+      </div>
+
+      <p class="invite">Por eso, el Departamento de Imagenología Diagnóstica y Terapéutica te invita este 12 de noviembre a ser parte de «El lienzo de la Imagenología», un espacio dedicado a conmemorar el camino que trazaron nuestros antepasados para construir la carrera que somos hoy. Un momento para celebrar nuestra historia y pintar juntos el camino que aún nos queda por recorrer.</p>
+    </section>
+
+    <section>
+      <h2 class="label">Agenda de Actividades</h2>
+      <ul class="agenda">
+        <li><span>Pintar sobre lienzos cosas referentes a la carrera</span><time>7am–12pm</time></li>
+        <li><span>Película “Radiactivo”</span><time>7am–12pm</time></li>
+      </ul>
+    </section>
+
+    <section class="register">
+      <h2>Registro</h2>
+      <p>Confirmá tu asistencia en el siguiente forms:</p>
+      <a class="button" href="https://forms.cloud.microsoft/r/5q4ZenwT8y" target="_blank" rel="noopener">Completar registro</a>
+    </section>
+
+    <section class="countdown" id="contador">
+      <h2 class="label">Faltan</h2>
+      <div class="countdown-grid">
+        <div><strong id="dias">0</strong><span>días</span></div>
+        <div><strong id="horas">00</strong><span>horas</span></div>
+        <div><strong id="minutos">00</strong><span>minutos</span></div>
+        <div><strong id="segundos">00</strong><span>segundos</span></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="logos">
+    <img src="images/logo1.png" alt="Logo del Departamento de Imagenología">
+    <img src="images/logo2.png" alt="Logo de la Universidad">
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
