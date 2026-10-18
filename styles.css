@@ -9,7 +9,7 @@ body {
   margin: 0;
   background: #fff;
   color: var(--text);
-  font-family: "Syne", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -146,4 +146,36 @@ h1, h2 { font-weight: 500; line-height: 1.3; margin: 0; }
 .logos img {
   height: 70px;
   width: auto;
+}
+
+figcaption {
+  font-weight: 700;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.block, .story {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;   /* imagen a la izquierda */
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 56px;
+}
+.reverse { grid-template-columns: 1.3fr 1fr; }  /* imagen a la derecha */
+.reverse > figure { order: 2; }
+
+@media (max-width: 640px) {
+  .block, .story, .reverse { grid-template-columns: 1fr; gap: 16px; }
+  .reverse > figure { order: 0; }
+}
+
+.countdown {
+  margin-top: 80px;      /* espacio arriba de la sección */
+  margin-bottom: 80px;   /* espacio abajo */
+}
+.countdown-grid {
+  gap: 56px;             /* espacio entre días, horas, minutos y segundos */
+}
+.countdown-grid strong {
+  font-size: 3.5rem;     /* tamaño de los números */
 }
