@@ -110,5 +110,6 @@ figcaption {
 .block p,
 .invite {
   text-align: justify;
+  -webkit-hyphens: auto;
   hyphens: auto;
 }
